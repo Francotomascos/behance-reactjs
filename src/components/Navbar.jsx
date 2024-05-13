@@ -1,16 +1,17 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import CartWidget from './CartWidget';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary py-3">
       <Container>
         <Navbar.Brand href="#home">
             <img
               src="/assets/behance-logo.png"
               width="auto"
-              height="80"
+              height="32"
               className="d-inline-block align-top"
               alt="behance logo"
             />
@@ -23,10 +24,7 @@ function NavBar() {
             <Nav.Link href="#about-us">About us</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
-          <div>
-            <img src='/assets/icons/cart.svg' height={32} width='auto' alt='cart icon' />
-            <span>(0)</span>
-          </div>
+          <CartWidget/>
         </Navbar.Collapse>
       </Container>
     </Navbar>
