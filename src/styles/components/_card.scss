@@ -1,0 +1,19 @@
+.card-container {
+    border-radius: 8px;
+    padding: 12px 0 0 0;
+    margin-bottom: 12px;
+    box-shadow: 0 0 4px #999;
+    &-img {
+        padding-bottom: 120%;
+    }
+    &-info {
+        span {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+                    line-clamp: 3; 
+            -webkit-box-orient: vertical;
+            margin: 8px 12px 0px;
+        }
+    }
+}

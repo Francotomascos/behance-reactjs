@@ -1,0 +1,23 @@
+.carousel {
+    .carousel-info {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        display: flex;
+        align-items: center;
+        .container {
+            div {
+                max-width: 320px;
+                h2 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 18px;
+                    margin-bottom: 32px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
